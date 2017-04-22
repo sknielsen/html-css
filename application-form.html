@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Application Form</h1>
+    <p class="instructions">Please complete to following application and hit submit</p>
+    <form action="/application-success" method="POST">
+        <p>First Name: <input type="text" name="firstName" required></p>
+        <p>Last Name: <input type="text" name="lastName" class="bold" required></p>
+        <p>Salary: <input type="number" name="salary" required></p>
+        <p>Which job are you applying to? <select name="job">
+            <option value="softwareEngineer">Software Engineer</option>
+            <option value="QAEngineer">QA Engineer</option>
+            <option value="productManager">Product Manager</option>
+        </select></p>
+        <input type="submit">
+    </form>
+</body>
+</html>
